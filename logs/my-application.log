@@ -1,0 +1,7 @@
+2025-09-04T09:33:56.783+05:30  WARN 4720 --- [demojsp] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16h2m49s674ms95µs300ns).
+2025-09-04T13:33:42.715+05:30  WARN 4720 --- [demojsp] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h14s887ms234µs900ns).
+2025-09-04T23:47:59.187+05:30  INFO 4720 --- [demojsp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-04T23:47:59.217+05:30  INFO 4720 --- [demojsp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-04T23:47:59.261+05:30  INFO 4720 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-04T23:47:59.281+05:30  INFO 4720 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-04T23:47:59.350+05:30  INFO 4720 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
