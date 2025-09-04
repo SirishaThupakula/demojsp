@@ -1,0 +1,3 @@
+springboot with db similar to cossdb;
+ mvn clean install -DskipTests
+ mvn spring:boot run 
