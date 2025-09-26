@@ -1,13 +1,13 @@
 package com.examplejsp.demojsp.dto;
 
 import com.examplejsp.demojsp.model.CossStudent;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Setter
 @Getter
 @NoArgsConstructor
+@EqualsAndHashCode
+@AllArgsConstructor
 
 public class CossStudentDTO {
 

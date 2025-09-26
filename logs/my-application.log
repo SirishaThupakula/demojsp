@@ -1,7 +1,820 @@
-2025-09-04T09:33:56.783+05:30  WARN 4720 --- [demojsp] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16h2m49s674ms95µs300ns).
-2025-09-04T13:33:42.715+05:30  WARN 4720 --- [demojsp] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h14s887ms234µs900ns).
-2025-09-04T23:47:59.187+05:30  INFO 4720 --- [demojsp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-09-04T23:47:59.217+05:30  INFO 4720 --- [demojsp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-09-04T23:47:59.261+05:30  INFO 4720 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-09-04T23:47:59.281+05:30  INFO 4720 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-09-04T23:47:59.350+05:30  INFO 4720 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T01:28:41.598+09:00  WARN 6744 --- [demojsp] [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2h26s633ms).
+2025-09-27T03:29:37.389+09:00  WARN 6744 --- [demojsp] [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2h25s661ms).
+2025-09-27T05:30:31.109+09:00  WARN 6744 --- [demojsp] [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2h23s717ms).
+2025-09-27T05:32:46.372+09:00  WARN 6744 --- [demojsp] [HikariPool-2:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1m45s264ms).
+2025-09-27T05:40:22.329+09:00  INFO 7786 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 7786 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T05:40:22.331+09:00  INFO 7786 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T05:40:23.178+09:00  INFO 7786 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T05:40:23.240+09:00  INFO 7786 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2025-09-27T05:40:23.800+09:00  INFO 7786 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T05:40:23.990+09:00  INFO 7786 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T05:40:23.992+09:00  INFO 7786 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T05:40:24.105+09:00  INFO 7786 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T05:40:24.149+09:00  INFO 7786 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T05:40:24.178+09:00  INFO 7786 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T05:40:24.446+09:00  INFO 7786 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T05:40:24.492+09:00  WARN 7786 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T05:40:24.508+09:00  INFO 7786 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T05:40:25.274+09:00  INFO 7786 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T05:40:25.298+09:00  INFO 7786 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T05:40:25.805+09:00  WARN 7786 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T05:40:26.598+09:00  INFO 7786 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T05:40:26.599+09:00  INFO 7786 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T05:40:26.608+09:00  INFO 7786 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T05:40:26.626+09:00  INFO 7786 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 27 ms
+2025-09-27T05:40:26.702+09:00  INFO 7786 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.762 seconds (process running for 5.892)
+2025-09-27T05:40:27.370+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T05:40:27.370+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T05:40:27.490+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T05:40:27.490+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T05:40:27.528+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T05:40:27.528+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T05:40:27.654+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T05:40:27.654+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T05:40:27.657+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T05:40:27.658+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)
+2025-09-27T05:40:27.678+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T05:40:27.678+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T05:40:27.680+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T05:40:27.680+09:00  INFO 7786 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)
+2025-09-27T05:40:27.695+09:00  INFO 7786 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T05:40:27.697+09:00  INFO 7786 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T05:40:27.700+09:00  INFO 7786 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T05:48:06.625+09:00  INFO 7848 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 7848 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T05:48:06.626+09:00  INFO 7848 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T05:48:07.485+09:00  INFO 7848 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T05:48:07.540+09:00  INFO 7848 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2025-09-27T05:48:08.096+09:00  INFO 7848 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T05:48:08.288+09:00  INFO 7848 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T05:48:08.290+09:00  INFO 7848 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T05:48:08.419+09:00  INFO 7848 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T05:48:08.462+09:00  INFO 7848 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T05:48:08.492+09:00  INFO 7848 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T05:48:08.754+09:00  INFO 7848 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T05:48:08.802+09:00  WARN 7848 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T05:48:08.835+09:00  INFO 7848 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T05:48:09.591+09:00  INFO 7848 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T05:48:09.616+09:00  INFO 7848 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T05:48:10.114+09:00  WARN 7848 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T05:48:10.894+09:00  INFO 7848 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T05:48:10.895+09:00  INFO 7848 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T05:48:10.904+09:00  INFO 7848 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T05:48:10.923+09:00  INFO 7848 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 28 ms
+2025-09-27T05:48:10.995+09:00  INFO 7848 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.751 seconds (process running for 5.947)
+2025-09-27T05:48:11.605+09:00  INFO 7848 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T05:48:11.605+09:00  INFO 7848 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T05:48:11.727+09:00  INFO 7848 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T05:48:11.727+09:00  INFO 7848 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T05:48:11.758+09:00  INFO 7848 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T05:48:11.759+09:00  INFO 7848 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T05:48:11.891+09:00  INFO 7848 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T05:48:11.892+09:00  INFO 7848 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T05:48:11.895+09:00  INFO 7848 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T05:48:11.895+09:00  INFO 7848 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)
+2025-09-27T05:48:11.919+09:00  INFO 7848 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T05:48:11.922+09:00  INFO 7848 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T05:48:11.924+09:00  INFO 7848 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:00:40.460+09:00  INFO 6744 --- [demojsp] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-09-27T06:00:40.462+09:00  INFO 6744 --- [demojsp] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-27T06:00:40.466+09:00  INFO 6744 --- [demojsp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-27T06:00:40.476+09:00  INFO 6744 --- [demojsp] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:00:40.478+09:00  INFO 6744 --- [demojsp] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-09-27T06:00:40.481+09:00  INFO 6744 --- [demojsp] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-09-27T06:00:40.570+09:00  INFO 6744 --- [demojsp] [restartedMain] c.examplejsp.demojsp.DemojspApplication  : Starting DemojspApplication using Java 21.0.2 with PID 6744 (/Users/sopeti/sirisha_projects/demojsp/target/classes started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:00:40.570+09:00  INFO 6744 --- [demojsp] [restartedMain] c.examplejsp.demojsp.DemojspApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-09-27T06:00:40.805+09:00  INFO 6744 --- [demojsp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:00:40.809+09:00  WARN 6744 --- [demojsp] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type com.examplejsp.demojsp.model.CossStudent not present
+2025-09-27T06:00:40.820+09:00  INFO 6744 --- [demojsp] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-27T06:00:40.841+09:00 ERROR 6744 --- [demojsp] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.TypeNotPresentException: Type com.examplejsp.demojsp.model.CossStudent not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95) ~[na:na]
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1296) ~[na:na]
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:553) ~[spring-core-6.2.10.jar:6.2.10]
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:501) ~[spring-core-6.2.10.jar:6.2.10]
+	at org.springframework.data.util.TypeDiscoverer.getSuperTypeInformation(TypeDiscoverer.java:263) ~[spring-data-commons-3.5.3.jar:3.5.3]
+	at org.springframework.data.util.ClassTypeInformation.getSuperTypeInformation(ClassTypeInformation.java:37) ~[spring-data-commons-3.5.3.jar:3.5.3]
+	at org.springframework.data.util.TypeInformation.getRequiredSuperTypeInformation(TypeInformation.java:327) ~[spring-data-commons-3.5.3.jar:3.5.3]
+	at org.springframework.data.repository.core.support.DefaultRepositoryMetadata.<init>(DefaultRepositoryMetadata.java:55) ~[spring-data-commons-3.5.3.jar:3.5.3]
+	at org.springframework.data.repository.core.support.AbstractRepositoryMetadata.getMetadata(AbstractRepositoryMetadata.java:79) ~[spring-data-commons-3.5.3.jar:3.5.3]
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.getRepositoryConfigurations(RepositoryConfigurationExtensionSupport.java:93) ~[spring-data-commons-3.5.3.jar:3.5.3]
+	at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:170) ~[spring-data-commons-3.5.3.jar:3.5.3]
+	at org.springframework.boot.autoconfigure.data.AbstractRepositoryConfigurationSourceSupport.registerBeanDefinitions(AbstractRepositoryConfigurationSourceSupport.java:62) ~[spring-boot-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:401) ~[spring-context-6.2.10.jar:6.2.10]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986) ~[na:na]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:400) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:430) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.5.jar:3.5.5]
+	at com.examplejsp.demojsp.DemojspApplication.main(DemojspApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.5.jar:3.5.5]
+Caused by: java.lang.ClassNotFoundException: com.examplejsp.demojsp.model.CossStudent
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.5.5.jar:3.5.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[na:na]
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114) ~[na:na]
+	... 39 common frames omitted
+
+2025-09-27T06:00:42.293+09:00  INFO 6744 --- [demojsp] [restartedMain] c.examplejsp.demojsp.DemojspApplication  : Starting DemojspApplication using Java 21.0.2 with PID 6744 (/Users/sopeti/sirisha_projects/demojsp/target/classes started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:00:42.294+09:00  INFO 6744 --- [demojsp] [restartedMain] c.examplejsp.demojsp.DemojspApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-09-27T06:00:42.605+09:00  INFO 6744 --- [demojsp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:00:42.618+09:00  INFO 6744 --- [demojsp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-09-27T06:00:42.785+09:00  INFO 6744 --- [demojsp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-27T06:00:42.787+09:00  INFO 6744 --- [demojsp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-27T06:00:42.788+09:00  INFO 6744 --- [demojsp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-27T06:00:42.882+09:00  INFO 6744 --- [demojsp] [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-09-27T06:00:42.886+09:00  INFO 6744 --- [demojsp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-27T06:00:42.886+09:00  INFO 6744 --- [demojsp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 589 ms
+2025-09-27T06:00:43.063+09:00  INFO 6744 --- [demojsp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-09-27T06:00:43.088+09:00  INFO 6744 --- [demojsp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5527ec6a
+2025-09-27T06:00:43.089+09:00  INFO 6744 --- [demojsp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-09-27T06:00:43.090+09:00  INFO 6744 --- [demojsp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:00:43.091+09:00  INFO 6744 --- [demojsp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:00:43.098+09:00  INFO 6744 --- [demojsp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:00:43.100+09:00  INFO 6744 --- [demojsp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:00:43.132+09:00  INFO 6744 --- [demojsp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:00:43.132+09:00  INFO 6744 --- [demojsp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:00:43.319+09:00  WARN 6744 --- [demojsp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:00:43.569+09:00  INFO 8000 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 8000 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:00:43.571+09:00  INFO 8000 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T06:00:43.708+09:00  INFO 6744 --- [demojsp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-27T06:00:43.718+09:00  INFO 6744 --- [demojsp] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:00:43.765+09:00  INFO 6744 --- [demojsp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-27T06:00:43.777+09:00  INFO 6744 --- [demojsp] [restartedMain] c.examplejsp.demojsp.DemojspApplication  : Started DemojspApplication in 1.506 seconds (process running for 5224.402)
+2025-09-27T06:00:43.780+09:00  INFO 6744 --- [demojsp] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-27T06:00:44.503+09:00  INFO 8000 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:00:44.559+09:00  INFO 8000 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2025-09-27T06:00:45.117+09:00  INFO 8000 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:00:45.304+09:00  INFO 8000 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T06:00:45.306+09:00  INFO 8000 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:00:45.415+09:00  INFO 8000 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:00:45.459+09:00  INFO 8000 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:00:45.502+09:00  INFO 8000 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:00:45.765+09:00  INFO 8000 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:00:45.812+09:00  WARN 8000 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T06:00:45.828+09:00  INFO 8000 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:00:46.615+09:00  INFO 8000 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:00:46.639+09:00  INFO 8000 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:00:47.131+09:00  WARN 8000 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:00:47.915+09:00  INFO 8000 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:00:47.915+09:00  INFO 8000 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:00:47.925+09:00  INFO 8000 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:00:47.945+09:00  INFO 8000 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 29 ms
+2025-09-27T06:00:48.018+09:00  INFO 8000 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.896 seconds (process running for 6.157)
+2025-09-27T06:00:48.682+09:00  INFO 8000 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T06:00:48.682+09:00  INFO 8000 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:00:48.791+09:00  INFO 8000 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:00:48.792+09:00  INFO 8000 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)
+2025-09-27T06:00:48.842+09:00  INFO 8000 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:00:48.845+09:00  INFO 8000 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T06:00:48.847+09:00  INFO 8000 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:02:38.813+09:00  INFO 8039 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 8039 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:02:38.816+09:00  INFO 8039 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T06:02:39.694+09:00  INFO 8039 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:02:39.755+09:00  INFO 8039 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2025-09-27T06:02:40.422+09:00  INFO 8039 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:02:40.621+09:00  INFO 8039 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T06:02:40.623+09:00  INFO 8039 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:02:40.737+09:00  INFO 8039 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:02:40.783+09:00  INFO 8039 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:02:40.817+09:00  INFO 8039 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:02:41.131+09:00  INFO 8039 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:02:41.182+09:00  WARN 8039 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T06:02:41.198+09:00  INFO 8039 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:02:41.979+09:00  INFO 8039 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:02:42.004+09:00  INFO 8039 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:02:42.494+09:00  WARN 8039 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:02:43.304+09:00  INFO 8039 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:02:43.304+09:00  INFO 8039 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:02:43.317+09:00  INFO 8039 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:02:43.338+09:00  INFO 8039 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 32 ms
+2025-09-27T06:02:43.413+09:00  INFO 8039 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.991 seconds (process running for 6.078)
+2025-09-27T06:02:44.084+09:00  INFO 8039 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T06:02:44.084+09:00  INFO 8039 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:02:44.092+09:00  INFO 8039 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:02:44.093+09:00  INFO 8039 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.editCossStudentDetails(..)
+2025-09-27T06:02:44.144+09:00  INFO 8039 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:02:44.147+09:00  INFO 8039 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T06:02:44.149+09:00  INFO 8039 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:03:12.083+09:00  INFO 8062 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 8062 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:03:12.084+09:00  INFO 8062 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T06:03:12.968+09:00  INFO 8062 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:03:13.036+09:00  INFO 8062 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2025-09-27T06:03:13.595+09:00  INFO 8062 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:03:13.786+09:00  INFO 8062 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T06:03:13.789+09:00  INFO 8062 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:03:13.902+09:00  INFO 8062 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:03:13.957+09:00  INFO 8062 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:03:13.986+09:00  INFO 8062 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:03:14.256+09:00  INFO 8062 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:03:14.305+09:00  WARN 8062 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T06:03:14.323+09:00  INFO 8062 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:03:19.194+09:00  INFO 8062 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:03:19.218+09:00  INFO 8062 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:03:19.727+09:00  WARN 8062 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:03:20.485+09:00  INFO 8062 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:03:20.486+09:00  INFO 8062 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:03:20.495+09:00  INFO 8062 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:03:20.512+09:00  INFO 8062 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 26 ms
+2025-09-27T06:03:20.595+09:00  INFO 8062 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 8.902 seconds (process running for 6.057)
+2025-09-27T06:03:21.286+09:00  INFO 8062 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T06:03:21.287+09:00  INFO 8062 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:03:21.296+09:00  INFO 8062 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:03:21.297+09:00  INFO 8062 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.editCossStudentDetails(..)
+2025-09-27T06:03:21.357+09:00  INFO 8062 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:03:21.360+09:00  INFO 8062 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T06:03:21.362+09:00  INFO 8062 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:06:10.592+09:00  INFO 8105 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 8105 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:06:10.594+09:00  INFO 8105 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T06:06:11.466+09:00  INFO 8105 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:06:11.532+09:00  INFO 8105 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2025-09-27T06:06:12.140+09:00  INFO 8105 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:06:12.325+09:00  INFO 8105 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T06:06:12.327+09:00  INFO 8105 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:06:12.437+09:00  INFO 8105 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:06:12.482+09:00  INFO 8105 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:06:12.518+09:00  INFO 8105 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:06:12.793+09:00  INFO 8105 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:06:12.840+09:00  WARN 8105 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T06:06:12.857+09:00  INFO 8105 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:06:13.652+09:00  INFO 8105 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:06:13.675+09:00  INFO 8105 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:06:14.170+09:00  WARN 8105 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:06:14.964+09:00  INFO 8105 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:06:14.965+09:00  INFO 8105 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:06:14.974+09:00  INFO 8105 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:06:14.991+09:00  INFO 8105 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 26 ms
+2025-09-27T06:06:15.070+09:00  INFO 8105 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.871 seconds (process running for 6.048)
+2025-09-27T06:06:15.761+09:00  INFO 8105 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T06:06:15.761+09:00  INFO 8105 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:06:15.769+09:00  INFO 8105 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:06:15.769+09:00  INFO 8105 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.editCossStudentDetails(..)
+2025-09-27T06:06:15.832+09:00  INFO 8105 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:06:15.834+09:00  INFO 8105 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T06:06:15.837+09:00  INFO 8105 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:18:59.174+09:00  INFO 8226 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 8226 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:18:59.175+09:00  INFO 8226 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T06:19:00.098+09:00  INFO 8226 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:19:00.161+09:00  INFO 8226 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2025-09-27T06:19:00.702+09:00  INFO 8226 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:19:00.891+09:00  INFO 8226 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T06:19:00.894+09:00  INFO 8226 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:19:01.008+09:00  INFO 8226 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:19:01.063+09:00  INFO 8226 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:19:01.093+09:00  INFO 8226 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:19:01.359+09:00  INFO 8226 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:19:01.406+09:00  WARN 8226 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T06:19:01.421+09:00  INFO 8226 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:19:02.195+09:00  INFO 8226 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:19:02.219+09:00  INFO 8226 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:19:02.726+09:00  WARN 8226 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:19:03.477+09:00  INFO 8226 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:19:03.477+09:00  INFO 8226 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:19:03.487+09:00  INFO 8226 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:19:03.508+09:00  INFO 8226 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 30 ms
+2025-09-27T06:19:03.581+09:00  INFO 8226 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.803 seconds (process running for 5.95)
+2025-09-27T06:19:04.344+09:00  INFO 8226 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:19:04.344+09:00  INFO 8226 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:19:04.351+09:00  INFO 8226 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:19:04.352+09:00  INFO 8226 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:19:04.524+09:00  INFO 8226 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:19:04.527+09:00  INFO 8226 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T06:19:04.529+09:00  INFO 8226 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:23:35.406+09:00  INFO 8289 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 8289 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:23:35.407+09:00  INFO 8289 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T06:23:36.279+09:00  INFO 8289 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:23:36.343+09:00  INFO 8289 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2025-09-27T06:23:36.887+09:00  INFO 8289 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:23:37.087+09:00  INFO 8289 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T06:23:37.090+09:00  INFO 8289 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:23:37.204+09:00  INFO 8289 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:23:37.262+09:00  INFO 8289 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:23:37.297+09:00  INFO 8289 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:23:37.588+09:00  INFO 8289 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:23:37.639+09:00  WARN 8289 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T06:23:37.656+09:00  INFO 8289 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:23:38.464+09:00  INFO 8289 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:23:38.488+09:00  INFO 8289 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:23:38.994+09:00  WARN 8289 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:23:39.754+09:00  INFO 8289 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:23:39.755+09:00  INFO 8289 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:23:39.764+09:00  INFO 8289 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:23:39.783+09:00  INFO 8289 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 28 ms
+2025-09-27T06:23:39.859+09:00  INFO 8289 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.842 seconds (process running for 5.929)
+2025-09-27T06:23:40.535+09:00  INFO 8289 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:23:40.536+09:00  INFO 8289 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:23:40.548+09:00  INFO 8289 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:23:40.548+09:00  INFO 8289 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:23:40.719+09:00  INFO 8289 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:23:40.722+09:00  INFO 8289 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T06:23:40.724+09:00  INFO 8289 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:24:16.403+09:00  INFO 8308 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 8308 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:24:16.404+09:00  INFO 8308 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T06:24:17.289+09:00  INFO 8308 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:24:17.338+09:00  INFO 8308 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2025-09-27T06:24:17.908+09:00  INFO 8308 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:24:18.095+09:00  INFO 8308 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T06:24:18.097+09:00  INFO 8308 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:24:18.206+09:00  INFO 8308 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:24:18.249+09:00  INFO 8308 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:24:18.280+09:00  INFO 8308 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:24:18.558+09:00  INFO 8308 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:24:18.605+09:00  WARN 8308 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T06:24:18.622+09:00  INFO 8308 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:24:19.380+09:00  INFO 8308 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:24:19.404+09:00  INFO 8308 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:24:19.906+09:00  WARN 8308 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:24:20.696+09:00  INFO 8308 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:24:20.696+09:00  INFO 8308 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:24:20.706+09:00  INFO 8308 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:24:20.723+09:00  INFO 8308 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 27 ms
+2025-09-27T06:24:20.797+09:00  INFO 8308 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.777 seconds (process running for 5.884)
+2025-09-27T06:24:21.501+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:24:21.501+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:24:21.509+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:24:21.509+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:24:21.680+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:24:21.680+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:24:21.684+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:24:21.685+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:24:21.713+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T06:24:21.713+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:24:21.733+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:24:21.733+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:24:21.735+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:24:21.735+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:24:21.751+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T06:24:21.752+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:24:21.756+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:24:21.756+09:00  INFO 8308 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)
+2025-09-27T06:24:21.790+09:00  INFO 8308 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:24:21.793+09:00  INFO 8308 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T06:24:21.796+09:00  INFO 8308 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:30:29.274+09:00  INFO 8382 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 8382 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:30:29.275+09:00  INFO 8382 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T06:30:30.150+09:00  INFO 8382 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:30:30.200+09:00  INFO 8382 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2025-09-27T06:30:30.739+09:00  INFO 8382 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:30:30.922+09:00  INFO 8382 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T06:30:30.923+09:00  INFO 8382 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:30:31.045+09:00  INFO 8382 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:30:31.092+09:00  INFO 8382 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:30:31.122+09:00  INFO 8382 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:30:31.391+09:00  INFO 8382 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:30:31.455+09:00  WARN 8382 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T06:30:31.473+09:00  INFO 8382 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:30:32.230+09:00  INFO 8382 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:30:32.254+09:00  INFO 8382 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:30:32.753+09:00  WARN 8382 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:30:33.550+09:00  INFO 8382 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:30:33.551+09:00  INFO 8382 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:30:33.561+09:00  INFO 8382 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:30:33.580+09:00  INFO 8382 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 29 ms
+2025-09-27T06:30:33.653+09:00  INFO 8382 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.763 seconds (process running for 5.891)
+2025-09-27T06:30:34.356+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:30:34.356+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:30:34.364+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:30:34.364+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:30:34.547+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:30:34.547+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:30:34.551+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:30:34.552+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:30:34.583+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T06:30:34.584+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:30:34.621+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:30:34.622+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:30:34.625+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:30:34.626+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:30:34.642+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T06:30:34.643+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:30:34.646+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:30:34.647+09:00  INFO 8382 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)
+2025-09-27T06:30:34.668+09:00  INFO 8382 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:30:34.672+09:00  INFO 8382 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T06:30:34.675+09:00  INFO 8382 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:31:49.398+09:00  INFO 8407 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 8407 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:31:49.400+09:00  INFO 8407 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T06:31:50.272+09:00  INFO 8407 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:31:50.331+09:00  INFO 8407 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2025-09-27T06:31:50.901+09:00  INFO 8407 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:31:51.092+09:00  INFO 8407 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T06:31:51.094+09:00  INFO 8407 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:31:51.221+09:00  INFO 8407 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:31:51.265+09:00  INFO 8407 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:31:51.295+09:00  INFO 8407 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:31:51.576+09:00  INFO 8407 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:31:51.625+09:00  WARN 8407 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T06:31:51.641+09:00  INFO 8407 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:31:52.404+09:00  INFO 8407 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:31:52.428+09:00  INFO 8407 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:31:52.939+09:00  WARN 8407 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:31:53.725+09:00  INFO 8407 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:31:53.725+09:00  INFO 8407 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:31:53.734+09:00  INFO 8407 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:31:53.753+09:00  INFO 8407 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 28 ms
+2025-09-27T06:31:53.830+09:00  INFO 8407 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.832 seconds (process running for 5.952)
+2025-09-27T06:31:54.539+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:31:54.540+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:31:54.547+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:31:54.547+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:31:54.729+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:31:54.730+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:31:54.734+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:31:54.734+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:31:54.757+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T06:31:54.758+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:31:54.759+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:31:54.759+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.editCossStudentDetails(..)
+2025-09-27T06:31:54.794+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:31:54.794+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:31:54.797+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:31:54.797+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:31:54.831+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T06:31:54.832+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:31:54.835+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:31:54.836+09:00  INFO 8407 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)
+2025-09-27T06:31:54.852+09:00  INFO 8407 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:31:54.856+09:00  INFO 8407 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T06:31:54.858+09:00  INFO 8407 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:32:08.764+09:00  INFO 6744 --- [demojsp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-27T06:32:08.767+09:00  INFO 6744 --- [demojsp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-27T06:32:08.769+09:00  INFO 6744 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:32:08.770+09:00  INFO 6744 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-09-27T06:32:08.772+09:00  INFO 6744 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-09-27T06:32:23.210+09:00  INFO 8460 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 8460 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:32:23.211+09:00  INFO 8460 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T06:32:24.032+09:00  INFO 8460 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:32:24.081+09:00  INFO 8460 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2025-09-27T06:32:24.592+09:00  INFO 8460 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:32:24.798+09:00  INFO 8460 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T06:32:24.800+09:00  INFO 8460 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:32:24.907+09:00  INFO 8460 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:32:24.952+09:00  INFO 8460 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:32:24.982+09:00  INFO 8460 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:32:25.227+09:00  INFO 8460 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:32:25.274+09:00  WARN 8460 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T06:32:25.289+09:00  INFO 8460 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:32:25.976+09:00  INFO 8460 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:32:25.998+09:00  INFO 8460 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:32:26.518+09:00  WARN 8460 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:32:27.263+09:00  INFO 8460 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:32:27.264+09:00  INFO 8460 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:32:27.276+09:00  INFO 8460 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:32:27.296+09:00  INFO 8460 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 32 ms
+2025-09-27T06:32:27.371+09:00  INFO 8460 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.501 seconds (process running for 5.53)
+2025-09-27T06:32:28.020+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:32:28.020+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:32:28.028+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:32:28.029+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:32:28.205+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:32:28.205+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:32:28.209+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:32:28.209+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:32:28.228+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T06:32:28.229+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:32:28.231+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:32:28.231+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.editCossStudentDetails(..)
+2025-09-27T06:32:28.257+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:32:28.257+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:32:28.260+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:32:28.260+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:32:28.273+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T06:32:28.273+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:32:28.276+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:32:28.276+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)
+2025-09-27T06:32:28.300+09:00  INFO 8460 --- [demojsp] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.examplejsp.demojsp.controller.CossStudentControllerTest]: CossStudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-09-27T06:32:28.321+09:00  INFO 8460 --- [demojsp] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.examplejsp.demojsp.DemojspApplication for test class com.examplejsp.demojsp.controller.CossStudentControllerTest
+2025-09-27T06:32:28.328+09:00  INFO 8460 --- [demojsp] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-09-27T06:32:28.356+09:00  INFO 8460 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : Starting CossStudentControllerTest using Java 21.0.2 with PID 8460 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:32:28.357+09:00  INFO 8460 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2025-09-27T06:32:28.783+09:00  INFO 8460 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:32:28.784+09:00  INFO 8460 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:32:28.785+09:00  INFO 8460 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-09-27T06:32:28.799+09:00  INFO 8460 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : Started CossStudentControllerTest in 0.471 seconds (process running for 6.959)
+2025-09-27T06:32:28.863+09:00  WARN 8460 --- [demojsp] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2025-09-27T06:32:29.166+09:00  INFO 8460 --- [demojsp] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.examplejsp.demojsp.DemojspApplicationTests]: DemojspApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-09-27T06:32:29.184+09:00  INFO 8460 --- [demojsp] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.examplejsp.demojsp.DemojspApplication for test class com.examplejsp.demojsp.DemojspApplicationTests
+2025-09-27T06:32:29.190+09:00  INFO 8460 --- [demojsp] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-09-27T06:32:29.231+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.DemojspApplicationTests      : Starting DemojspApplicationTests using Java 21.0.2 with PID 8460 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:32:29.232+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.DemojspApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-09-27T06:32:29.589+09:00  INFO 8460 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:32:29.601+09:00  INFO 8460 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-09-27T06:32:29.741+09:00  INFO 8460 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-09-27T06:32:30.157+09:00  INFO 8460 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a5151d7
+2025-09-27T06:32:30.158+09:00  INFO 8460 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-09-27T06:32:30.186+09:00  INFO 8460 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:32:30.189+09:00  INFO 8460 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:32:30.196+09:00  INFO 8460 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:32:30.261+09:00  INFO 8460 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:32:30.299+09:00  INFO 8460 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:32:30.299+09:00  INFO 8460 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:32:30.529+09:00  WARN 8460 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:32:30.984+09:00  INFO 8460 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:32:31.011+09:00  INFO 8460 --- [demojsp] [main] c.e.demojsp.DemojspApplicationTests      : Started DemojspApplicationTests in 1.821 seconds (process running for 9.172)
+2025-09-27T06:32:31.042+09:00  INFO 8460 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:32:31.046+09:00  INFO 8460 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T06:32:31.049+09:00  INFO 8460 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:32:31.053+09:00  INFO 8460 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:32:31.054+09:00  INFO 8460 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-09-27T06:32:31.060+09:00  INFO 8460 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-09-27T06:33:06.379+09:00  INFO 8497 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : Starting CossStudentControllerTest using Java 21.0.2 with PID 8497 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:33:06.381+09:00  INFO 8497 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2025-09-27T06:33:08.105+09:00  INFO 8497 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:33:08.106+09:00  INFO 8497 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:33:08.107+09:00  INFO 8497 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-09-27T06:33:08.131+09:00  INFO 8497 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : Started CossStudentControllerTest in 2.196 seconds (process running for 3.282)
+2025-09-27T06:33:08.291+09:00  WARN 8497 --- [demojsp] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2025-09-27T06:33:36.135+09:00  INFO 8512 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : Starting CossStudentControllerTest using Java 21.0.2 with PID 8512 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:33:36.137+09:00  INFO 8512 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2025-09-27T06:33:37.904+09:00  INFO 8512 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:33:37.905+09:00  INFO 8512 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:33:37.906+09:00  INFO 8512 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-09-27T06:33:37.932+09:00  INFO 8512 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : Started CossStudentControllerTest in 2.243 seconds (process running for 3.399)
+2025-09-27T06:33:59.117+09:00  INFO 8546 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Starting CossStudentControllerIntegrationTest using Java 21.0.2 with PID 8546 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:33:59.119+09:00  INFO 8546 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : The following 1 profile is active: "test"
+2025-09-27T06:33:59.975+09:00  INFO 8546 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:34:00.025+09:00  INFO 8546 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2025-09-27T06:34:00.518+09:00  INFO 8546 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:34:00.724+09:00  INFO 8546 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-27T06:34:00.726+09:00  INFO 8546 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:34:00.830+09:00  INFO 8546 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:34:00.869+09:00  INFO 8546 --- [demojsp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:34:00.898+09:00  INFO 8546 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:34:01.145+09:00  INFO 8546 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:34:01.188+09:00  WARN 8546 --- [demojsp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-27T06:34:01.204+09:00  INFO 8546 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:34:01.877+09:00  INFO 8546 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:34:01.898+09:00  INFO 8546 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:34:02.420+09:00  WARN 8546 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:34:03.157+09:00  INFO 8546 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:34:03.157+09:00  INFO 8546 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:34:03.166+09:00  INFO 8546 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:34:03.186+09:00  INFO 8546 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 28 ms
+2025-09-27T06:34:03.258+09:00  INFO 8546 --- [demojsp] [main] d.c.CossStudentControllerIntegrationTest : Started CossStudentControllerIntegrationTest in 4.485 seconds (process running for 5.537)
+2025-09-27T06:34:03.917+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:34:03.917+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:34:03.925+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:34:03.925+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:34:04.091+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:34:04.091+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:34:04.095+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:34:04.095+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:34:04.113+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T06:34:04.114+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:34:04.115+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:34:04.115+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.editCossStudentDetails(..)
+2025-09-27T06:34:04.146+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:34:04.146+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:34:04.148+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:34:04.148+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:34:04.163+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T06:34:04.163+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:34:04.166+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:34:04.166+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)
+2025-09-27T06:34:04.212+09:00  INFO 8546 --- [demojsp] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.examplejsp.demojsp.controller.CossStudentControllerTest]: CossStudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-09-27T06:34:04.230+09:00  INFO 8546 --- [demojsp] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.examplejsp.demojsp.DemojspApplication for test class com.examplejsp.demojsp.controller.CossStudentControllerTest
+2025-09-27T06:34:04.233+09:00  INFO 8546 --- [demojsp] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-09-27T06:34:04.260+09:00  INFO 8546 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : Starting CossStudentControllerTest using Java 21.0.2 with PID 8546 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:34:04.261+09:00  INFO 8546 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2025-09-27T06:34:04.691+09:00  INFO 8546 --- [demojsp] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-09-27T06:34:04.692+09:00  INFO 8546 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-09-27T06:34:04.693+09:00  INFO 8546 --- [demojsp] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-09-27T06:34:04.710+09:00  INFO 8546 --- [demojsp] [main] c.e.d.c.CossStudentControllerTest        : Started CossStudentControllerTest in 0.478 seconds (process running for 6.989)
+2025-09-27T06:34:05.067+09:00  INFO 8546 --- [demojsp] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.examplejsp.demojsp.DemojspApplicationTests]: DemojspApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-09-27T06:34:05.080+09:00  INFO 8546 --- [demojsp] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.examplejsp.demojsp.DemojspApplication for test class com.examplejsp.demojsp.DemojspApplicationTests
+2025-09-27T06:34:05.085+09:00  INFO 8546 --- [demojsp] [main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-09-27T06:34:05.127+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.DemojspApplicationTests      : Starting DemojspApplicationTests using Java 21.0.2 with PID 8546 (started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:34:05.128+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.DemojspApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-09-27T06:34:05.510+09:00  INFO 8546 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:34:05.526+09:00  INFO 8546 --- [demojsp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2025-09-27T06:34:05.683+09:00  INFO 8546 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-09-27T06:34:06.125+09:00  INFO 8546 --- [demojsp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42cb8174
+2025-09-27T06:34:06.126+09:00  INFO 8546 --- [demojsp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-09-27T06:34:06.156+09:00  INFO 8546 --- [demojsp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:34:06.159+09:00  INFO 8546 --- [demojsp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:34:06.168+09:00  INFO 8546 --- [demojsp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:34:06.218+09:00  INFO 8546 --- [demojsp] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:34:06.258+09:00  INFO 8546 --- [demojsp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:34:06.259+09:00  INFO 8546 --- [demojsp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:34:06.506+09:00  WARN 8546 --- [demojsp] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:34:06.954+09:00  INFO 8546 --- [demojsp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:34:06.994+09:00  INFO 8546 --- [demojsp] [main] c.e.demojsp.DemojspApplicationTests      : Started DemojspApplicationTests in 1.909 seconds (process running for 9.274)
+2025-09-27T06:34:07.029+09:00  INFO 8546 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:34:07.033+09:00  INFO 8546 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-27T06:34:07.036+09:00  INFO 8546 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-27T06:34:07.043+09:00  INFO 8546 --- [demojsp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:34:07.045+09:00  INFO 8546 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-09-27T06:34:07.053+09:00  INFO 8546 --- [demojsp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-09-27T06:34:18.339+09:00  INFO 8609 --- [demojsp] [restartedMain] c.examplejsp.demojsp.DemojspApplication  : Starting DemojspApplication using Java 21.0.2 with PID 8609 (/Users/sopeti/sirisha_projects/demojsp/target/classes started by sopeti in /Users/sopeti/sirisha_projects/demojsp)
+2025-09-27T06:34:18.341+09:00  INFO 8609 --- [demojsp] [restartedMain] c.examplejsp.demojsp.DemojspApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-09-27T06:34:18.379+09:00  INFO 8609 --- [demojsp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-27T06:34:18.379+09:00  INFO 8609 --- [demojsp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-27T06:34:19.150+09:00  INFO 8609 --- [demojsp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-27T06:34:19.200+09:00  INFO 8609 --- [demojsp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2025-09-27T06:34:19.866+09:00  INFO 8609 --- [demojsp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-27T06:34:19.881+09:00  INFO 8609 --- [demojsp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-27T06:34:19.881+09:00  INFO 8609 --- [demojsp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-27T06:34:20.075+09:00  INFO 8609 --- [demojsp] [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-09-27T06:34:20.083+09:00  INFO 8609 --- [demojsp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-27T06:34:20.083+09:00  INFO 8609 --- [demojsp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1703 ms
+2025-09-27T06:34:20.330+09:00  INFO 8609 --- [demojsp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-27T06:34:20.637+09:00  INFO 8609 --- [demojsp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@22e5597
+2025-09-27T06:34:20.639+09:00  INFO 8609 --- [demojsp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-27T06:34:20.673+09:00  INFO 8609 --- [demojsp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-27T06:34:20.723+09:00  INFO 8609 --- [demojsp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-27T06:34:20.751+09:00  INFO 8609 --- [demojsp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-27T06:34:20.980+09:00  INFO 8609 --- [demojsp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-27T06:34:21.070+09:00  INFO 8609 --- [demojsp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-27T06:34:21.723+09:00  INFO 8609 --- [demojsp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-27T06:34:21.725+09:00  INFO 8609 --- [demojsp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-27T06:34:22.023+09:00  WARN 8609 --- [demojsp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-27T06:34:22.568+09:00  INFO 8609 --- [demojsp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-27T06:34:22.578+09:00  INFO 8609 --- [demojsp] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-27T06:34:22.662+09:00  INFO 8609 --- [demojsp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-27T06:34:22.676+09:00  INFO 8609 --- [demojsp] [restartedMain] c.examplejsp.demojsp.DemojspApplication  : Started DemojspApplication in 4.758 seconds (process running for 5.11)
+2025-09-27T06:34:36.825+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-27T06:34:36.825+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-27T06:34:36.826+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-27T06:34:36.908+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-1] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T06:34:36.908+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-1] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:34:36.981+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-1] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:34:36.982+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-1] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.editCossStudentDetails(..)
+2025-09-27T06:34:39.081+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-4] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.showLoginPage(..)
+2025-09-27T06:34:39.081+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-4] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.showLoginPage(..)
+2025-09-27T06:34:52.874+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-6] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:34:52.874+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-6] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:34:52.914+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-6] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:34:52.915+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-6] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:34:52.929+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-5] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T06:34:52.930+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-5] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:34:53.022+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-5] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:34:53.023+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-5] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)
+2025-09-27T06:35:01.666+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-7] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.editCossStudentDetails(..)
+2025-09-27T06:35:01.667+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-7] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:35:01.672+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-7] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.editStudentDetails(..)
+2025-09-27T06:35:01.672+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-7] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.editCossStudentDetails(..)
+2025-09-27T06:35:10.256+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-8] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:35:10.256+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-8] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:35:10.274+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-8] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.createOrUpdateCossStudent(..)
+2025-09-27T06:35:10.274+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-8] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.createOrUpdateCossStudent(..)
+2025-09-27T06:35:10.284+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-9] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T06:35:10.285+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-9] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:35:10.290+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-9] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:35:10.290+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-9] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)
+2025-09-27T06:35:14.493+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-10] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:35:14.493+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-10] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:35:14.504+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-10] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.deleteCossStudent(..)
+2025-09-27T06:35:14.505+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-10] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.deleteCossStudentDetails(..)
+2025-09-27T06:35:14.516+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-1] c.e.demojsp.utility.LoggingAspect        : Before method call LoginController.listOfCossStudents(..)
+2025-09-27T06:35:14.516+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-1] c.e.demojsp.utility.LoggingAspect        : Before method call CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:35:14.522+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-1] c.e.demojsp.utility.LoggingAspect        : Method execution done CossStudentServiceImpl.retrieveCossStudentList()
+2025-09-27T06:35:14.522+09:00  INFO 8609 --- [demojsp] [http-nio-8080-exec-1] c.e.demojsp.utility.LoggingAspect        : Method execution done LoginController.listOfCossStudents(..)

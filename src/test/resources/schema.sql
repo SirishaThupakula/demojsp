@@ -1,9 +1,4 @@
-springboot with db similar to cossdb;
- mvn clean install -DskipTests
- mvn spring-boot:run
-
-
- CREATE TABLE CossStudent
+CREATE TABLE CossStudent
   (
    id bigint(20) NOT NULL AUTO_INCREMENT,
    cossName  varchar(40)  NOT NULL,
@@ -11,4 +6,3 @@ springboot with db similar to cossdb;
    cossMobile varchar(20)  NOT NULL,
     PRIMARY KEY (id)
  );
-

@@ -1,13 +1,16 @@
 package com.examplejsp.demojsp.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Table
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode
+@Builder
 public class CossStudent {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,4 +24,5 @@ public class CossStudent {
 
     @Column(name = "cossMobile")
     private String cossMobile;
+
 }

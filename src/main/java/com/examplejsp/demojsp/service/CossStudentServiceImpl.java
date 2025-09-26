@@ -38,7 +38,10 @@ public class CossStudentServiceImpl implements CossStudentService{
 
     @Override
     public CossStudentDTO editStudentDetails(Long cossStudentId) {
+        System.out.println("cossStudentId::"+cossStudentId);
         Optional<CossStudent> cossStudentOptional=  cossStudentRepository.findById(cossStudentId);
+        System.out.println(cossStudentOptional.isPresent());
+
        return    cossStudentOptional.map(CossUtility::convertCossStudentToCossStudentDTO).orElseThrow(IllegalArgumentException ::new);
     }
 
